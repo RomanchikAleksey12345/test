@@ -11,7 +11,7 @@ public class AddReviewTest extends CommonConditions {
     @Test
     public  void addNewReviewForProduct() {
         try {
-            Review emptyReview = ReviewCreator.createReviewFromProperty();
+            Review emptyReview = ReviewCreator.createEmptyReview();
             User testUser = UserCreator.createUserFromProperties();
             String reviewMessage = UserAuthorization.LogIn(testUser)
                     .getSledProducts()
