@@ -10,7 +10,7 @@ public class LoginTest extends  CommonConditions{
     @Test
     public  void loginReturnedTrue() throws InterruptedException {
         try {
-        User testUser = UserCreator.createUserFromProperties();
+        User testUser = UserCreator.createEmptyUser();
         WebElement userPhoto = UserAuthorization.LogIn(testUser)
                 .getUserHeaderPhoto();
         }
